@@ -43,6 +43,16 @@ public class PasswordValidatorTest {
     }
 
 
+    @Test
+    public void testAdminPasswordTrue (){
+        Assertions.assertTrue(passwordValidator. AdminPassword("abcdefgafd*"));
+    }
+
+    @Test
+    public void testAdminPasswordFalse (){
+        Assertions.assertFalse(passwordValidator. AdminPassword("abcds!"));
+    }
+
 
 
 

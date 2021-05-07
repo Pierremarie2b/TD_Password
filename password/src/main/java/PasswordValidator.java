@@ -24,6 +24,21 @@ public class PasswordValidator {
 
     }
 
+    public boolean testLengthPasswordAdmin(String password) {
+        return password.length() > 10;
+
+    }
+
+    public boolean testChar(String password) {
+        return password.matches(".*[^a-zA-Z0-9].*");
+
+    }
+
+    public boolean AdminPassword(String password) {
+        return testLengthPasswordAdmin(password) && testChar(password);
+
+    }
+
 
 
 }
