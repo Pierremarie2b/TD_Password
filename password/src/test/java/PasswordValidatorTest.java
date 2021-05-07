@@ -14,9 +14,12 @@ public class PasswordValidatorTest {
 
     @Test
     public void testLengthPassword(){
-
         Assertions.assertTrue(passwordValidator. testLengthPassword("aaaaaaa"));
+    }
 
+    @Test
+    public void testSmallLengthPassword(){
+        Assertions.assertFalse(passwordValidator. testLengthPassword("aaaa"));
     }
 
     @Test
@@ -25,8 +28,18 @@ public class PasswordValidatorTest {
     }
 
     @Test
+    public void testNotOnlyNumber(){
+        Assertions.assertFalse(passwordValidator. testNumber("aaaaa"));
+    }
+
+    @Test
     public void testLetter(){
         Assertions.assertTrue(passwordValidator. testLetter("adfvvdd"));
+    }
+
+    @Test
+    public void testNotOnlyLetter(){
+        Assertions.assertFalse(passwordValidator. testLetter("202020"));
     }
 
 

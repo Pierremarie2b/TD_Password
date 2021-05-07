@@ -11,6 +11,8 @@ public class PasswordValidator {
 
     }
 
+
+
    public boolean testNumber(String password){
         return password.matches(".*[0-9].*");
 
