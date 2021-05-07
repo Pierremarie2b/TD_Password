@@ -16,12 +16,12 @@ public class PasswordValidator {
 
     }
 
-    /*
-    public boolean testLetter(){
 
+    public boolean testLetter(String password){
+        return password.matches(".*[a-zA-Z].*");
 
     }
 
-*/
+
 
 }
