@@ -15,13 +15,13 @@ public class PasswordValidatorTest {
     @Test
     public void testLengthPassword(){
 
-        Assertions.assertTrue(passwordValidator. testLengthPassword("abc12777"));
+        Assertions.assertFalse(passwordValidator. testLengthPassword("aaa"));
 
     }
 
     @Test
     public void testNumber(){
-
+        Assertions.assertFalse(passwordValidator. testNumber("adfvv"));
     }
 
     @Test

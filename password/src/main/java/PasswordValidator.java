@@ -11,11 +11,12 @@ public class PasswordValidator {
 
     }
 
-   /* public boolean testNumber(){
-
+   public boolean testNumber(String password){
+        return password.matches(".*[0-9].*");
 
     }
 
+    /*
     public boolean testLetter(){
 
 
